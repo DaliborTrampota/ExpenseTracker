@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @apply bg-blue-950 text-white
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+    @apply text-2xl font-bold mb-2
+}
+
+h2 {
+    @apply text-lg font-bold mb-1
+}
+
+button, select {
+    @apply bg-indigo-500 px-3 py-1 rounded-md text-white
+}
+
+section {
+    @apply basis-1/4 bg-indigo-900 p-5 rounded-lg
+}
+
+.item {
+    @apply justify-between flex px-1 py-0.5
+}
+
+.item:hover {
+    @apply bg-red-500 rounded-md 
+}
+
+.income .amount {
+    @apply text-green-500
+}
+
+.outcome .amount {
+    @apply text-red-500
+}
